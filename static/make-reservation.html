@@ -98,29 +98,36 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-        <h1 class="mt-5">Search for Reservation</h1>
+        <div class="col">
+        
 
-        <form action="" method="POST">
-          <div class="row">
-            <div class="col">
-            <div class="mb-3">
-              <label for="start_date" class="form-label">starting date</label>
-              <input required type="date" class="form-control" id="start_date" name="start_date" aria-describedby="startdatehelp">
-              <div id="emailhelp" class="form-text">enter your starting date in the form of mm/dd/yyyy.</div>
-            </div>
-            </div>
-            <div class="col">
-            <div class="mb-3">
-              <label for="ending_date" class="form-label">Ending Date</label>
-              <input required type="date"  class="form-control" id="ending_date" name="ending_date" aria-describedby="endDateHelp">
-              <div id="emailHelp" class="form-text">Enter your ending date in the form of MM/DD/YYYY.</div>
-            </div>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Search Availability</button>
-        </form>
+            <h1>Make Reservarion</h1>
+            <form action="" method="POST" class="needs-validation">
+
+                <div class="form-group mt-5">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" class="form-control" autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" class="form-control" required autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="text" name="phone" id="phone" class="form-control" required autocomplete="off">
+                </div>
+                <hr>
+
+                <input type="subit" class="btn btn-primary" value="Make Reservation">
+            </form>
+
+
         </div>
       </div>
     </div>
